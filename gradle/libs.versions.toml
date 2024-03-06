@@ -1,0 +1,116 @@
+#Versions TABLE
+[versions]
+
+# Gradle Plugin Version
+agp = "8.3.0"
+#Coil Image Loding
+
+coil = "2.5.0"
+#Splash Screen Api
+coreSplashscreen = "1.1.0-alpha02"
+
+#Coroutines
+coroutineVersion = "1.7.3"
+
+#Activity
+fragmentKtx = "1.6.2"
+
+#Hilt
+daggerHiltVersion = "2.50"
+hiltAndroid = "2.50"
+
+#Kotlin Version
+kotlin = "1.9.10"
+
+#Testing
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+
+#Network
+retrofitVersion = "2.9.0"
+loggingInterceptor = "4.12.0"
+
+#Architecture component
+viewmodelVersion = "2.7.0"
+lifecycleViewmodelKtx = "2.7.0"
+coreKtx = "1.12.0"
+
+#Core Ui
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+recyclerviewVersion = "1.3.2"
+
+#Navigation
+navVersion = "2.7.7"
+
+#Paging
+pagingRuntimeKtx = "3.2.1"
+
+#Preference Settings
+preferenceKtx = "1.2.1"
+
+#Room
+roomRuntime = "2.6.1"
+
+#Kotlin Symbol Processing
+kspVersion = "1.9.0-1.0.13"
+
+#Libraries TABLE
+[libraries]
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "viewmodelVersion" }
+
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "viewmodelVersion" }
+androidx-lifecycle-viewmodel-ktx-v270 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navVersion" }
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navVersion" }
+
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navVersion" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preferenceKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomRuntime" }
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutineVersion" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutineVersion" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+recyclerview = {module = "androidx.recyclerview:recyclerview",version.ref = "recyclerviewVersion"}
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+
+#Plugins TABLE
+[plugins]
+
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinSymbolProcessing = {id = "com.google.devtools.ksp",  version.ref = "kspVersion"}
+daggerHilt = {id = "com.google.dagger.hilt.android", version.ref = "daggerHiltVersion"}
