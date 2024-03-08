@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/shareArticle"
+        android:icon="@drawable/share_icon24px"
+        android:title="@string/share"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/bookmarkArticle"
+        android:icon="@drawable/bookmark_icon24px"
+        android:title="@string/bookmark"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

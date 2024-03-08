@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trendingNewsFragment">
+
+
+                    <!--Trending-->
+    <fragment
+        android:id="@+id/trendingNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.trending.TrendingNewsFragment"
+        android:label="TrendingNewsFragment" >
+        <action
+            android:id="@+id/action_trendingNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_trendingNewsFragment_to_searchNewsFragment"
+            app:destination="@id/searchNewsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_trendingNewsFragment_to_settingsHostFragment"
+            app:destination="@id/settingsHostFragment" />
+    </fragment>
+
+                    <!--Headline-->
+    <fragment
+        android:id="@+id/headlineNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.HeadlineNewsFragment"
+        android:label="fragment_headline_news"
+        tools:layout="@layout/fragment_headline_news" >
+        <action
+            android:id="@+id/action_headlineNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment" />
+        <action
+            android:id="@+id/action_headlineNewsFragment_to_searchNewsFragment"
+            app:destination="@id/searchNewsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+
+                    <!--Sources-->
+    <fragment
+        android:id="@+id/newsSourcesFragment"
+        android:name="com.mubarak.newscastmb.ui.sources.NewsSourcesFragment"
+        android:label="fragment_explore_news"
+        tools:layout="@layout/fragment_news_sources" >
+        <action
+            android:id="@+id/action_newsSourcesFragment_to_newsSourcesDetailedFragment"
+            app:destination="@id/newsSourcesDetailedFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_newsSourcesFragment_to_searchNewsFragment"
+            app:destination="@id/searchNewsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+
+
+<!--  Search News Fragment  -->
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.search.SearchNewsFragment"
+        android:label="fragment_search_news"
+        tools:layout="@layout/fragment_search_news" >
+        <action
+            android:id="@+id/action_searchNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment" />
+    </fragment>
+
+
+                            <!--Headline categories-->
+
+    <fragment
+        android:id="@+id/businessNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.business.BusinessNewsFragment"
+        android:label="fragment_business_news"
+        tools:layout="@layout/fragment_business_news" >
+        <action
+            android:id="@+id/action_businessNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.entertainment.EntertainmentNewsFragment"
+        android:label="fragment_entertainment_news"
+        tools:layout="@layout/fragment_entertainment_news" >
+        <action
+            android:id="@+id/action_entertainmentNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/scienceNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.science.ScienceNewsFragment"
+        android:label="fragment_science_news"
+        tools:layout="@layout/fragment_science_news" >
+        <action
+            android:id="@+id/action_scienceNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportsNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.sports.SportsNewsFragment"
+        android:label="fragment_sports_news"
+        tools:layout="@layout/fragment_sports_news" >
+        <action
+            android:id="@+id/action_sportsNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/technologyNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.technology.TechNewsFragment"
+        android:label="fragment_technology_news"
+        tools:layout="@layout/fragment_tech_news" >
+        <action
+            android:id="@+id/action_technologyNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+                                <!--News Detail-->
+    <fragment
+        android:id="@+id/detailedNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.newsdetail.NewsDetailFragment"
+        android:label="fragment_detailed_news"
+        tools:layout="@layout/fragment_news_detail" >
+        <argument
+            android:name="newsItem"
+            app:argType="com.mubarak.newscastmb.data.sources.local.NewsItems" />
+    </fragment>
+
+                            <!--Sources News Detail-->
+    <fragment
+        android:id="@+id/newsSourcesDetailedFragment"
+        android:name="com.mubarak.newscastmb.ui.newsdetail.NewsSourcesDetailFragment"
+        android:label="newsSourcesDetailedFragment" >
+        <argument
+            android:name="sourceItem"
+            app:argType="com.mubarak.newscastmb.data.sources.remote.dto.SourceItem" />
+    </fragment>
+
+    <!--Bookmark-->
+    <fragment
+        android:id="@+id/bookmarkedNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.bookmark.BookmarkedNewsFragment"
+        android:label="BookmarkedNewsFragment" >
+        <action
+            android:id="@+id/action_bookmarkedNewsFragment_to_searchNewsFragment"
+            app:destination="@id/searchNewsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthNewsFragment"
+        android:name="com.mubarak.newscastmb.ui.headlines.categories.health.HealthNewsFragment"
+        android:label="HealthNewsFragment" >
+        <action
+            android:id="@+id/action_healthNewsFragment_to_detailedNewsFragment"
+            app:destination="@id/detailedNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsHostFragment"
+        android:name="com.mubarak.newscastmb.ui.settings.SettingsHostFragment"
+        android:label="SettingsHostFragment" />
+</navigation>

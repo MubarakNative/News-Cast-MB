@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinSymbolProcessing)
     alias(libs.plugins.daggerHilt)
     id("kotlin-parcelize")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -36,6 +37,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,6 +55,7 @@ dependencies {
 
     // Hilt
     implementation(libs.hilt.android)
+    implementation(libs.androidx.preference)
     ksp(libs.hilt.android.compiler)
 
     // Room

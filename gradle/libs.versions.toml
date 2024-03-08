@@ -57,6 +57,7 @@ roomRuntime = "2.6.1"
 
 #Kotlin Symbol Processing
 kspVersion = "1.9.0-1.0.13"
+preference = "1.2.1"
 
 #Libraries TABLE
 [libraries]
@@ -106,6 +107,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 recyclerview = {module = "androidx.recyclerview:recyclerview",version.ref = "recyclerviewVersion"}
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
 
 #Plugins TABLE
 [plugins]
