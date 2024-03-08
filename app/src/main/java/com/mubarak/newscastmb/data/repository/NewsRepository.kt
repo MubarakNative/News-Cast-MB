@@ -61,16 +61,4 @@ class NewsRepository
         ).flow
     }
 
-    suspend fun insertBookmarkNews(bookmarkNews: BookmarkNews){
-        database.getBookmarkedNewsDao.insertNews(bookmarkNews)
-    }
-
-    fun getAllBookmarkedNews(): Flow<List<BookmarkNews>>{
-        return database.getBookmarkedNewsDao.getAllBookmarkedNews()
-    }
-
-   suspend fun deleteBookmarkedNews(bookmarkNews: BookmarkNews){
-        database.getBookmarkedNewsDao.deleteBookmarkedNews(bookmarkNews)
-    }
-
 }

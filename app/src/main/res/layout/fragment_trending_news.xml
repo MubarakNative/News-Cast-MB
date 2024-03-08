@@ -17,7 +17,7 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:navigationIcon="@drawable/search_icon24px"
             app:menu="@menu/opt_trending_news_menu"
-            app:title="MB News"
+            app:title="@string/app_name"
             app:titleCentered="true"
             app:titleTextAppearance="?attr/textAppearanceTitleLarge" />
 
