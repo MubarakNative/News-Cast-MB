@@ -7,7 +7,6 @@ import com.mubarak.newscastmb.MyApplication
 import com.mubarak.newscastmb.R
 import dagger.hilt.android.AndroidEntryPoint
 
-//@AndroidEntryPoint
 class SettingsFragment : PreferenceFragmentCompat() {
     private val application: MyApplication = MyApplication()
 

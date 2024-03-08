@@ -5,6 +5,7 @@ import com.mubarak.newscastmb.data.sources.local.NewsDatabase
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+/**This is a implementation of [BookmarkRepository]*/
 class BookmarkRepositoryImpl @Inject constructor(
     private val newsDatabase: NewsDatabase
 ):BookmarkRepository {

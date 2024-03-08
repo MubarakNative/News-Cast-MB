@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.databinding.FragmentSettingsHostBinding
 import com.mubarak.newscastmb.utils.onUpButtonClick
-
 class SettingsHostFragment : Fragment() {
 
     private lateinit var binding: FragmentSettingsHostBinding

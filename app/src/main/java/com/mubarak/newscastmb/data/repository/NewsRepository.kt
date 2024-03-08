@@ -16,6 +16,7 @@ import com.mubarak.newscastmb.data.sources.remote.dto.SourceItem
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+/**News Repository for centralizing our paged remote data*/
 class NewsRepository
 @Inject constructor(
     private val newsApi: NewsApi,

@@ -1,4 +1,4 @@
-package com.mubarak.newscastmb.ui.adapters
+package com.mubarak.newscastmb.ui.trending
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,6 +12,7 @@ import com.mubarak.newscastmb.data.sources.local.NewsItems
 import com.mubarak.newscastmb.databinding.NewsItemLayoutBinding
 import javax.inject.Inject
 
+/**Paging Adapter for TrendingNewsFragment*/
 class TrendingNewsPagingAdapter @Inject constructor() :
     PagingDataAdapter<NewsItems, TrendingNewsPagingAdapter.NewsViewHolder>(COMPARATOR) {
 

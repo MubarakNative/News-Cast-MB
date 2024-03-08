@@ -9,12 +9,11 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mubarak.newscastmb.databinding.FragmentHealthNewsBinding
-import com.mubarak.newscastmb.ui.adapters.TrendingNewsPagingAdapter
+import com.mubarak.newscastmb.ui.trending.TrendingNewsPagingAdapter
 import com.mubarak.newscastmb.ui.headlines.HeadlineNewsFragmentDirections
 import com.mubarak.newscastmb.ui.viewmodel.MainViewModel
 import com.mubarak.newscastmb.utils.AppConstants
@@ -32,7 +31,6 @@ class HealthNewsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
 
         binding = FragmentHealthNewsBinding.inflate(
          layoutInflater,
@@ -66,7 +64,6 @@ class HealthNewsFragment : Fragment() {
         }
 
     }
-
 
 
     private fun setUpRecyclerView(recyclerView: RecyclerView) {

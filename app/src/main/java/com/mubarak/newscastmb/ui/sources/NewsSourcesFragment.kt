@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -14,10 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mubarak.newscastmb.R
-import com.mubarak.newscastmb.data.sources.remote.dto.SourceItem
 import com.mubarak.newscastmb.databinding.FragmentNewsSourcesBinding
-import com.mubarak.newscastmb.ui.adapters.NewsSourcesPagingAdapter
-import com.mubarak.newscastmb.utils.onUpButtonClick
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

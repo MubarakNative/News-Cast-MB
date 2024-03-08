@@ -17,8 +17,7 @@ class TrendingNewsViewModel @Inject constructor(
 
     val getAllNews = newsRepository.trendingNewsPagedData.cachedIn(viewModelScope).catch {
         emit(PagingData.empty())
-    } //  Flow<PagingData<NewsItems>>
-
+    }
 
 }
 

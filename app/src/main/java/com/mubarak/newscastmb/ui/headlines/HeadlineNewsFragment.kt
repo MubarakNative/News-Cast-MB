@@ -5,13 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.databinding.FragmentHeadlineNewsBinding
-import com.mubarak.newscastmb.ui.adapters.TrendingNewsPagingAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

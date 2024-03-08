@@ -7,6 +7,7 @@ import androidx.room.Upsert
 import com.mubarak.newscastmb.data.sources.local.NewsItems
 import kotlinx.coroutines.flow.Flow
 
+/**NewsDao for paging 3 remote mediator to cache the news locally*/
 @Dao
 interface NewsDao {
 

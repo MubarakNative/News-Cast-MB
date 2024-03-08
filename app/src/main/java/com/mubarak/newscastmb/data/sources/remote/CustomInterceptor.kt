@@ -6,6 +6,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 
+/**We use Okhttp interceptor for logging and passing api_key for http requests*/
 class CustomInterceptor: Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
 
@@ -21,7 +22,7 @@ class CustomInterceptor: Interceptor {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
-      return  OkHttpClient.Builder()
+      return OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
             .addInterceptor(CustomInterceptor())
           .build()

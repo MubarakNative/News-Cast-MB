@@ -10,6 +10,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -20,18 +22,22 @@ class SearchNewsViewmodel @Inject constructor(
 ) : ViewModel() {
 
     private var searchJob: Job? = null
-    val searchResult: MutableStateFlow<PagingData<NewsItems>> = MutableStateFlow(PagingData.empty())
+
+    private val _searchResults: MutableStateFlow<PagingData<NewsItems>> = MutableStateFlow(PagingData.empty())
+    val searchResults: StateFlow<PagingData<NewsItems>> = _searchResults.asStateFlow()
 
     fun getNewsBySearch(searchQuery: String) {
 
         searchJob?.cancel()
 
+        /**Debounce delay for search don't trigger network calls
+         * for per keystroke in search fragment*/
         searchJob = viewModelScope.launch {
             delay(DEBOUNCE_DELAY)
             newsRepository.newsQueryPager(searchQuery).catch {
                 emit(PagingData.empty())
             }.cachedIn(viewModelScope).collect {
-                searchResult.value = it
+                _searchResults.value = it
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.mubarak.newscastmb.ui.adapters
+package com.mubarak.newscastmb.ui.sources
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,10 +9,11 @@ import com.mubarak.newscastmb.data.sources.remote.dto.SourceItem
 import com.mubarak.newscastmb.databinding.NewsSourceItemLayoutBinding
 import javax.inject.Inject
 
+/**Paging Adapter for NewsSourcesFragment*/
 class NewsSourcesPagingAdapter @Inject constructor(): PagingDataAdapter<SourceItem,
-        NewsSourcesPagingAdapter.ExploreNewsViewHolder>(COMPARATOR) {
+        NewsSourcesPagingAdapter.NewsSourcesViewHolder>(COMPARATOR) {
 
-    class ExploreNewsViewHolder(binding: NewsSourceItemLayoutBinding): RecyclerView.ViewHolder(binding.root){
+    class NewsSourcesViewHolder(binding: NewsSourceItemLayoutBinding): RecyclerView.ViewHolder(binding.root){
 
         val tvSourceName = binding.tvDiscoverNewsSourceName
         val tvSourceDescription = binding.tvDiscoverNewsSourceDescription
@@ -31,7 +32,7 @@ class NewsSourcesPagingAdapter @Inject constructor(): PagingDataAdapter<SourceIt
         }
     }
 
-    override fun onBindViewHolder(holder: ExploreNewsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: NewsSourcesViewHolder, position: Int) {
         val list = getItem(position)
         holder.apply {
 
@@ -46,8 +47,8 @@ class NewsSourcesPagingAdapter @Inject constructor(): PagingDataAdapter<SourceIt
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExploreNewsViewHolder {
-        return ExploreNewsViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsSourcesViewHolder {
+        return NewsSourcesViewHolder(
             NewsSourceItemLayoutBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         )
     }

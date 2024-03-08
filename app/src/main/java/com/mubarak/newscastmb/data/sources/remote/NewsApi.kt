@@ -22,7 +22,7 @@ interface NewsApi {
         @Query("language") language:String="en"
     ):News
 
-    // getting breaking news according to the category for categories
+    // getting breaking news according to the category for headline news fragment
     @GET("v2/top-headlines")
     suspend fun getTopCategoriesHeadlines(
         @Query("page") page:Int,
@@ -30,6 +30,7 @@ interface NewsApi {
         @Query("country") country:String,
     ):News
 
+    // for displaying difference news sources in Sources Fragment
     @GET("v2/top-headlines/sources")
     suspend fun getNewsSources(
         @Query("language") language:String

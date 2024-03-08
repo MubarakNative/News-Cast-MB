@@ -31,7 +31,7 @@ class NewsDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentNewsDetailBinding
 
-    lateinit var webView: WebView
+    private lateinit var webView: WebView
 
     private val navArgs: NewsDetailFragmentArgs by navArgs()
     private val viewModel: NewsDetailViewModel by viewModels()
@@ -78,17 +78,6 @@ class NewsDetailFragment : Fragment() {
             loadUrl(url)
 
         }
-
-        /*  val callback = object : OnBackPressedCallback(true) {
-              override fun handleOnBackPressed() {
-                  if (webView.canGoBack()) {
-                      webView.goBack()
-                  } else {
-                      isEnabled = false
-                      requireActivity().onBackPressed()
-                  }
-              }
-          }*/
 
         binding.bottomAppBar.setNavigationOnClickListener {
             findNavController().popBackStack()

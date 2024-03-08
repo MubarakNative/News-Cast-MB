@@ -46,10 +46,6 @@
     <color name="md_theme_dark_scrim">#000000</color>
 
 
-
-
-
-
     <color name="md_theme_light_primary">#6750A4</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
     <color name="md_theme_light_primaryContainer">#EADDFF</color>

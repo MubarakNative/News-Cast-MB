@@ -5,6 +5,7 @@ import androidx.room.Query
 import androidx.room.Upsert
 import com.mubarak.newscastmb.data.sources.local.NewsRemoteKey
 
+/**NewsRemoteKeyDao for paging 3 Remote mediator*/
 @Dao
 interface NewsRemoteKeyDao {
 

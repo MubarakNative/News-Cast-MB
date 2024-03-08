@@ -7,7 +7,7 @@ import com.mubarak.newscastmb.data.sources.remote.dto.SourceItem
 import com.mubarak.newscastmb.utils.AppConstants.NEWS_LANGUAGE
 import javax.inject.Inject
 
-/** Paging Source class for sources fragment*/
+/** Paging Source class for news sources fragment*/
 class SourcesPaging @Inject constructor(private val newsApi: NewsApi) : PagingSource<Int, SourceItem>() {
     override fun getRefreshKey(state: PagingState<Int, SourceItem>): Int? {
         return state.anchorPosition?.let {

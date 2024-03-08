@@ -19,7 +19,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.databinding.FragmentNewsSourcesDetailBinding
 
-
 class NewsSourcesDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentNewsSourcesDetailBinding

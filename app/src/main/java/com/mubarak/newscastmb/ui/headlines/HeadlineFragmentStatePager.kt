@@ -17,7 +17,6 @@ import com.mubarak.newscastmb.utils.AppConstants.START_TAB
 import com.mubarak.newscastmb.utils.AppConstants.THIRD_TABS
 import com.mubarak.newscastmb.utils.AppConstants.TOTAL_TABS
 
-
 class HeadlineFragmentStatePager(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {

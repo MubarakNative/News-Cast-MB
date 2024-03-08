@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.data.sources.local.NewsItems
 import com.mubarak.newscastmb.databinding.FragmentTrendingNewsBinding
-import com.mubarak.newscastmb.ui.adapters.TrendingNewsPagingAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

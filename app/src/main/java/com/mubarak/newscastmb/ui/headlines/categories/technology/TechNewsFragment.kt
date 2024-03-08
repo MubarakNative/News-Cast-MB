@@ -14,13 +14,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mubarak.newscastmb.data.sources.local.NewsItems
 import com.mubarak.newscastmb.databinding.FragmentTechNewsBinding
-import com.mubarak.newscastmb.ui.adapters.TrendingNewsPagingAdapter
+import com.mubarak.newscastmb.ui.trending.TrendingNewsPagingAdapter
 import com.mubarak.newscastmb.ui.headlines.HeadlineNewsFragmentDirections
 import com.mubarak.newscastmb.ui.viewmodel.MainViewModel
 import com.mubarak.newscastmb.utils.AppConstants
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

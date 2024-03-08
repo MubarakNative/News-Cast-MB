@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -17,13 +16,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.databinding.FragmentSearchNewsBinding
-import com.mubarak.newscastmb.ui.adapters.TrendingNewsPagingAdapter
+import com.mubarak.newscastmb.ui.trending.TrendingNewsPagingAdapter
 import com.mubarak.newscastmb.utils.onUpButtonClick
 import com.mubarak.newscastmb.utils.showSoftKeyboard
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -80,7 +76,10 @@ class SearchNewsFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
 
-                viewModel.searchResult.collect {
+                /**Collect the search result's according to the
+                 * search query and display it into recyclerview*/
+
+                viewModel.searchResults.collect {
                     pagerAdapter.submitData(lifecycle, it)
                 }
             }
