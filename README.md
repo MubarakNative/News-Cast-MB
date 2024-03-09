@@ -2,7 +2,10 @@
 
 ### This app demonstrate the typical workflow when we working with http client like (Retrofit)
 
-[Screenshots](Screenshots%2FNewsCastMbAppScreenshot.png)
+![Screenshots](Screenshots/NewsCastMbAppScreenshot.png)
+
+
+![Screenshots](Screenshots/NewsCastDarkScreenshot.png)
 
 **This App will build upon on**
 
@@ -17,7 +20,7 @@
 
 ### Features ✅
 
-CRUD opeations For Notes
+Main features of this news app.
 
 - [x] Offline Article using Paging 3 Remote mediator.
 
@@ -29,7 +32,7 @@ CRUD opeations For Notes
 
 - [x] Search a specific article.
 
-- [x] Swipe to delete bookmarked news and more,...
+- [x] Swipe to delete bookmarked news and more, ...
 
 ### Note 👀
 
