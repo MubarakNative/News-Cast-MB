@@ -93,7 +93,9 @@ class NewsDetailFragment : Fragment() {
 
                 R.id.bookmarkArticle -> {
                     bookmarkArticle()
-                    Snackbar.make(view, R.string.article_bookmarked, Snackbar.LENGTH_SHORT).show()
+                    Snackbar.make(view, R.string.article_bookmarked, Snackbar.LENGTH_SHORT).setAnchorView(
+                        binding.bottomAppBar
+                    ).show()
                     true
                 }
 
