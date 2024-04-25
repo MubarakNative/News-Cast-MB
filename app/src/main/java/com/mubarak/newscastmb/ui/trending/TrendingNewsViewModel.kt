@@ -13,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class TrendingNewsViewModel @Inject constructor(
     private val newsRepository: NewsRepository
-):ViewModel() {
+) : ViewModel() {
 
     val getAllNews = newsRepository.trendingNewsPagedData.cachedIn(viewModelScope).catch {
         emit(PagingData.empty())

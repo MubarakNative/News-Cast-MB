@@ -5,16 +5,13 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Toast
-import androidx.activity.OnBackPressedCallback
-import androidx.activity.addCallback
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -23,7 +20,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.mubarak.newscastmb.R
 import com.mubarak.newscastmb.data.sources.local.BookmarkNews
 import com.mubarak.newscastmb.databinding.FragmentNewsDetailBinding
-import com.mubarak.newscastmb.ui.bookmark.BookMarkNewsViewModel_HiltModules_KeyModule_ProvideFactory
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -93,9 +89,10 @@ class NewsDetailFragment : Fragment() {
 
                 R.id.bookmarkArticle -> {
                     bookmarkArticle()
-                    Snackbar.make(view, R.string.article_bookmarked, Snackbar.LENGTH_SHORT).setAnchorView(
-                        binding.bottomAppBar
-                    ).show()
+                    Snackbar.make(view, R.string.article_bookmarked, Snackbar.LENGTH_SHORT)
+                        .setAnchorView(
+                            binding.bottomAppBar
+                        ).show()
                     true
                 }
 
