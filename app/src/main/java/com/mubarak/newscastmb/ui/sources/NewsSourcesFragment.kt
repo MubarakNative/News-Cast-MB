@@ -43,10 +43,15 @@ class NewsSourcesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.sourcesToolbar.setNavigationOnClickListener {
-            findNavController().navigate(R.id.action_newsSourcesFragment_to_searchNewsFragment)
-        }
 
+        binding.sourcesToolbar.setOnMenuItemClickListener {
+            return@setOnMenuItemClickListener when(it.itemId){
+                R.id.opt_search_sources ->{
+                    findNavController().navigate(R.id.action_newsSourcesFragment_to_searchNewsFragment)
+                    true
+                }else -> false
+            }
+        }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
