@@ -15,4 +15,22 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory app:title="About">
+
+        <Preference
+            app:key="activity"
+            app:title="Open Source Project">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/MubarakNative/News-Cast-MB"/>
+        </Preference>
+
+        <Preference
+            app:key="license"
+            app:title="Version"
+            app:summary="1.0.0"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
