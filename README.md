@@ -24,9 +24,11 @@ Main features of this news app.
 
 - [x] Offline Article using Paging 3 Remote mediator.
 
-- [x] Bookmark the Article for later offline read using Room persistance library.
+- [x] Bookmark the Article for later offline read using Room persistence library.
 
 - [x] Multiple News categories using Tab layout.
+
+- [x] Edge to Edge (Drawing the UI behind the System bar).
 
 - [x] Dark and Light theme support using PreferenceSettingLibrary.
 
