@@ -2,6 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NewsCastMB" parent="Theme.Material3.DayNight.NoActionBar">
 
+        <item name="fontFamily">@font/dmsans_18pt_regular</item>
+
         <item name="colorSecondary">@color/md_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
@@ -36,13 +38,6 @@
 
     </style>
 
-    <style name="Theme.NewsCastMB" parent="Base.Theme.NewsCastMB" >
-
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="fontFamily">@font/dmsans_18pt_regular</item>
-
-    </style>
+    <style name="Theme.NewsCastMB" parent="Base.Theme.NewsCastMB"/>
 
 </resources>
