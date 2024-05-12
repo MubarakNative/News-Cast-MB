@@ -15,7 +15,6 @@
             android:id="@+id/discoverDetailedNewsToolBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
             app:menu="@menu/opt_sources_news_details_menu"
             app:navigationIcon="@drawable/back_arrow24px"
             app:titleCentered="true"

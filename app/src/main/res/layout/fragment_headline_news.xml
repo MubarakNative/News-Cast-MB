@@ -14,7 +14,6 @@
             android:id="@+id/newsHeadlineToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
             app:menu="@menu/opt_headlines_news_menu"
             app:title="Headlines"
             app:titleCentered="true"

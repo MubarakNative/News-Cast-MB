@@ -15,7 +15,6 @@
             android:id="@+id/sourcesToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
             app:menu="@menu/opt_sources_news_menu"
             app:title="Sources"
             app:titleCentered="true"
