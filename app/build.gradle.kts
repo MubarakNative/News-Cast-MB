@@ -97,6 +97,9 @@ dependencies {
     // Preference
     implementation(libs.androidx.preference.ktx)
 
+    // LeakCanary
+    debugImplementation(libs.leakcanary.android)
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
