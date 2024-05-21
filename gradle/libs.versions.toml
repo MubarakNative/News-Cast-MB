@@ -2,7 +2,7 @@
 [versions]
 
 # Gradle Plugin Version
-agp = "8.3.0"
+agp = "8.4.0"
 #Coil Image Loding
 
 coil = "2.5.0"
