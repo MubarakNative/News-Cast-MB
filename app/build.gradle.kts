@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.kotlinSymbolProcessing)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.daggerHilt)
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
@@ -85,7 +86,6 @@ dependencies {
 
     // Kotlin Ktx
     implementation (libs.androidx.fragment.ktx)
-    implementation (libs.androidx.lifecycle.viewmodel.ktx.v270)
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
@@ -96,6 +96,19 @@ dependencies {
 
     // Preference
     implementation(libs.androidx.preference.ktx)
+
+    // LeakCanary
+    debugImplementation(libs.leakcanary.android)
+
+    implementation(libs.ktor.client.core) // Ktor-Core
+    implementation(libs.ktor.client.android) // Ktor-Engine
+
+    implementation(libs.kotlinx.serialization.json) // KotlinX Serialization (Convert JSON response to Kotlin Objects)
+    implementation(libs.ktor.serialization.kotlinx.json) // Ktor- To work with Serialization
+
+    implementation(libs.ktor.client.logging) // Logging (Optional)
+
+    implementation(libs.ktor.client.content.negotiation) // Serialization
 
     // Testing
     testImplementation(libs.junit)
