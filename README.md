@@ -15,7 +15,7 @@
 * `Retrofit` Http client for making network calls.
 * `Dagger Hilt` for Dependency Injection.
 * `Navigation Component` for fragment navigation.
-* Reactive Ui using Kotlin Flows and Coroutines.
+* Reactive UI using Kotlin `flows` and Coroutines.
 * Implemented Settings using PreferenceSettingCompat library.
 
 ### Features ✅
@@ -35,6 +35,8 @@ Main features of this news app.
 - [x] Search a specific article.
 
 - [x] Swipe to delete bookmarked news and more, ...
+
+> The app offers a wide range of features that surpass those of other news apps available on GitHub.
 
 ### Note 👀
 
