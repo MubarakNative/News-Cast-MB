@@ -54,6 +54,8 @@ _There is a some http request limit's if we cross it doesn't return any news_
 
 **So adding many features / improvement will not worth for the time for projects like this for this reason's new features might not be implemented in this project**
 
+### For more modern compose based news app Checkout [WikiNewsFeed](https://github.com/MubarakNative/WikiNewsFeed)
+
 
 ### Contribution 🤝
 
