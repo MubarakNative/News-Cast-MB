@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.kotlinSymbolProcessing)
-    alias(libs.plugins.kotlin.serialization)
+    id("com.google.devtools.ksp")
     alias(libs.plugins.daggerHilt)
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")

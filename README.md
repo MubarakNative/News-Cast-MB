@@ -15,7 +15,7 @@
 * `Retrofit` Http client for making network calls.
 * `Dagger Hilt` for Dependency Injection.
 * `Navigation Component` for fragment navigation.
-* Reactive Ui using Kotlin Flows and Coroutines.
+* Reactive UI using Kotlin `flows` and Coroutines.
 * Implemented Settings using PreferenceSettingCompat library.
 
 ### Features ✅
@@ -36,6 +36,8 @@ Main features of this news app.
 
 - [x] Swipe to delete bookmarked news and more, ...
 
+> The app offers a wide range of features that surpass those of other news apps available on GitHub.
+
 ### Note 👀
 
 #### Before you begin
@@ -51,6 +53,8 @@ _There is a some http request limit's if we cross it doesn't return any news_
 **This Project tends to showcases the integration of Retrofit and some other libraries and also we don't have any control over the data all feature's will be based on that api**
 
 **So adding many features / improvement will not worth for the time for projects like this for this reason's new features might not be implemented in this project**
+
+### For more modern compose based news app Checkout [WikiNewsFeed](https://github.com/MubarakNative/WikiNewsFeed)
 
 
 ### Contribution 🤝
