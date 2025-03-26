@@ -1,66 +1,44 @@
-# News Caster MB -News App
-
-### This app demonstrate the typical workflow when we working with http client like (Retrofit)
-
 ![Screenshots](Screenshots/NewsCastMbAppScreenshot.png)
 
+# NewsCastMB
 
-![Screenshots](Screenshots/NewsCastDarkScreenshot.png)
+**NewsCastMB** is a feature-rich news application built to demonstrate Modern Android Development best practices and the latest tools.
 
-**This App will build upon on**
+## 🛠 Built With
 
-* `Android Views (XML)`.
-* `Room` database for offline news cache.
-* `Paging 3` library for loading large sets of data.
-* `Retrofit` Http client for making network calls.
-* `Dagger Hilt` for Dependency Injection.
-* `Navigation Component` for fragment navigation.
-* Reactive UI using Kotlin `flows` and Coroutines.
-* Implemented Settings using PreferenceSettingCompat library.
+This app is developed using:
 
-### Features ✅
+- **Android Views (XML)** for UI design.
+- **Room** database for offline news caching.
+- **Paging 3** library for efficient pagination and large data handling.
+- **Retrofit** for making network requests.
+- **Dagger Hilt** for dependency injection.
+- **Navigation Component** for seamless fragment navigation.
+- **Coil** for efficient image loading.
+- **Kotlin Flows & Coroutines** for reactive UI.
+- **PreferenceSettingCompat** for managing app settings.
 
-Main features of this news app.
+## 🚀 Features  
 
-- [x] Offline Article using Paging 3 Remote mediator.
+![Screenshots](Screenshots/NewsCastDarkScreenshot.png)  
 
-- [x] Bookmark the Article for later offline read using Room persistence library.
+Key features of **NewsCastMB**:
 
-- [x] Multiple News categories using Tab layout.
+- ✅ Offline article caching using Paging 3 Remote Mediator.
+- ✅ Bookmark articles for offline reading using Room.
+- ✅ Multiple news categories with a tab layout.
+- ✅ Edge-to-edge UI, drawing behind the system bars.
+- ✅ Light & Dark theme support using PreferenceSettingCompat.
+- ✅ Search functionality to find specific articles.
+- ✅ Swipe to delete for bookmarked news and more...
 
-- [x] Edge to Edge (Drawing the UI behind the System bar).
+## 👀 Note  
 
-- [x] Dark and Light theme support using PreferenceSettingLibrary.
+> **Before you begin**
 
-- [x] Search a specific article.
+This app uses the **NewsAPI** service to fetch articles. To display news, you need to [register an account](https://newsapi.org/register), get an API key, and include it in **`AppConstants.API_KEY`**.
 
-- [x] Swipe to delete bookmarked news and more, ...
+## 🔧 Improvements  
 
-> The app offers a wide range of features that surpass those of other news apps available on GitHub.
-
-### Note 👀
-
-#### Before you begin
-
-**This App uses public api for fetching news article's named **NewsApi****
-
-**This Api need a API_KEY for fetching news create a account on [NewsApi](https://newsapi.org/register) and include it on `AppConstants.API_KEY`**
-
-_There is a some http request limit's if we cross it doesn't return any news_
-
-### Improvement 🔧
-
-**This Project tends to showcases the integration of Retrofit and some other libraries and also we don't have any control over the data all feature's will be based on that api**
-
-**So adding many features / improvement will not worth for the time for projects like this for this reason's new features might not be implemented in this project**
-
-### For more modern compose based news app Checkout [WikiNewsFeed](https://github.com/MubarakNative/WikiNewsFeed)
-
-
-### Contribution 🤝
-
-If you like to contribute this project you can do it
-As i already mention this project aims to showcases the different libraries for single Retrofit project to
-scale this app further more.
-
-All features and improvement should be committed on respective branches `features` branch for new features and `improvement` branch was improvement the existing feature.
+This app is built with **Android Views** and relies on an external news API, which is not free.  
+For a more advanced version, check out **[WikiNewsFeed](https://github.com/MubarakNative/WikiNewsFeed)**—built with **Jetpack Compose** and powered by the free **WikiNews API**.
