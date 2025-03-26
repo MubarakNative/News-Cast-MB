@@ -2,7 +2,7 @@
 [versions]
 
 # Gradle Plugin Version
-agp = "8.4.1"
+agp = "8.9.0"
 #Coil Image Loding
 
 coil = "2.5.0"
@@ -17,10 +17,10 @@ fragmentKtx = "1.7.0"
 
 #Hilt
 daggerHiltVersion = "2.50"
-hiltAndroid = "2.50"
+hiltAndroid = "2.52"
 
 #Kotlin Version
-kotlin = "1.9.10"
+kotlin = "2.1.10"
 
 #Testing
 junit = "4.13.2"
@@ -57,7 +57,7 @@ preferenceKtx = "1.2.1"
 roomRuntime = "2.6.1"
 
 #Kotlin Symbol Processing
-kspVersion = "1.9.0-1.0.13"
+kspVersion = "2.1.10-1.0.31"
 preference = "1.2.1"
 
 #Libraries TABLE
